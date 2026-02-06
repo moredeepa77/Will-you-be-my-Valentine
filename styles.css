@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
     height: 100vh;
     font-family: 'Baloo 2', cursive;
     overflow: hidden;
 }
 
-/* ========== BACKGROUND SPLIT ========== */
-
+/* ===== BACKGROUND SPLIT ===== */
 .background {
     position: fixed;
     inset: 0;
@@ -27,16 +27,16 @@ body {
     padding-bottom: 40px;
 }
 
-/* Colors */
+/* Background colors */
 .red-side {
-    background-color: #f8caca;
+    background-color: #f8caca;   /* light red */
 }
 
 .green-side {
-    background-color: #d9f2d9;
+    background-color: #d9f2d9;   /* light green */
 }
 
-/* GIF layout */
+/* ===== GIFS ===== */
 .gif-box {
     display: flex;
     gap: 20px;
@@ -47,8 +47,7 @@ body {
     height: auto;
 }
 
-/* ========== MAIN CONTENT (TEXT + BUTTONS) ========== */
-
+/* ===== MAIN CONTENT (TEXT + BUTTONS) ===== */
 .content {
     position: relative;
     z-index: 5;
@@ -58,7 +57,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    padding-top: 90px;   /* pushes Hey Omkii slightly down from top */
+    padding-top: 50px;     /* Hey Omkii stays near top */
     text-align: center;
 }
 
@@ -69,20 +68,23 @@ body {
     margin-bottom: 30px;
 }
 
-/* Question */
+/* Question with BIG GAP */
 .question {
     color: #d32f2f;
     font-size: 1.6em;
-    margin-bottom: 50px; /* REAL GAP */
+
+    margin-top: 140px;     /* 🔥 BIG EMPTY SPACE */
+    margin-bottom: 90px;  /* 🔥 gap before buttons */
 }
 
-/* Buttons */
+/* Buttons layout */
 .buttons {
     display: flex;
     gap: 30px;
+    margin-top: 20px;
 }
 
-/* YES */
+/* YES button */
 .yes-button {
     background-color: #4CAF50;
     color: white;
@@ -93,7 +95,7 @@ body {
     cursor: pointer;
 }
 
-/* NO */
+/* NO button */
 .no-button {
     background-color: #F44336;
     color: white;
