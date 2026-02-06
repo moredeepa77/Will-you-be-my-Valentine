@@ -1,53 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #F6E7C1; /* Vanilla - You */
-  font-family: 'Arial', sans-serif;
-  flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
-  
-  .container {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #d32f2f;
-  }
-  p {
-  color: #d32f2f;
+
+/* Background split */
+.background {
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .yes-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .no-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .gif_container img {
-    max-width: 100%;
+
+.half {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colors */
+.red-side {
+    background-color: #f8caca; /* light red */
+}
+
+.green-side {
+    background-color: #d9f2d9; /* light green */
+}
+
+/* GIF layout */
+.gif-box {
+    display: flex;
+    gap: 20px;
+}
+
+.gif-box img {
+    width: 120px;
     height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+}
+
+/* Center overlay content */
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-content h1 {
+    color: #d32f2f;
+    font-size: 2.5em;
+}
+
+.center-content p {
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.yes-button, .no-button {
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
