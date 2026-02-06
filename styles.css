@@ -5,8 +5,8 @@
 }
 
 body {
-    height: 200vh;
-    font-family: Arial, sans-serif;
+    height: 100vh;                 /* ❌ 200vh काढलं */
+    font-family: 'Baloo 2', cursive;
     overflow: hidden;
 }
 
@@ -26,11 +26,11 @@ body {
 
 /* Colors */
 .red-side {
-    background-color: #f8caca; /* light red */
+    background-color: #f8caca;
 }
 
 .green-side {
-    background-color: #d9f2d9; /* light green */
+    background-color: #d9f2d9;
 }
 
 /* GIF layout */
@@ -47,43 +47,26 @@ body {
 /* Center overlay content */
 .center-content {
     position: absolute;
-    top: 50%;
+    top: 38%;                     /* 🔥 वर आणलं */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-/* Text spacing */
+/* Main heading */
 .center-content h1 {
     color: #d32f2f;
-    font-size: 2.5em;
-    margin-bottom: 35px; /* BIGGER gap after Hey Omkii */
+    font-size: 3.5em;             /* 🔥 मोठं */
+    margin-bottom: 35px;
 }
 
+/* Question text */
 .center-content p {
     color: #d32f2f;
-    font-size: 1.2em;
-    margin-bottom: 40px; /* CLEAR gap before buttons */
+    font-size: 1.5em;
+    margin-bottom: 45px;          /* 🔥 clear gap */
 }
 
-/* YES button */
-.yes-button {
-    background-color: #4CAF50; /* green */
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* NO button */
-.no-button {
-    background-color: #F44336; /* red */
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-}
+/* Buttons layout */
+.buttons {
+    di
