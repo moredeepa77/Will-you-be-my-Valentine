@@ -63,10 +63,8 @@ body {
     margin-bottom: 20px;
 }
 
-.buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.no-button {
+  position: absolute;
 }
 
 .yes-button, .no-button {
